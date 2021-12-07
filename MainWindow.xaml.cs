@@ -90,6 +90,11 @@ namespace Lab10Starter
         /// </summary>
         private void ResetGame()
         {
+            foreach (Button button in grid)
+            {
+                button.Content = "";
+            }
+            ticTacToe.ResetGame();
 
         }
 
