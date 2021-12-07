@@ -90,6 +90,12 @@ namespace Lab10Starter
                 ToggleCurrentPlayer();
                 return false;
             }
+
+            if (victor != Player.Both)
+            {
+                scores[(int)victor]++;
+            }
+
             return true;
         }
 
